@@ -1,0 +1,132 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.aboutPage-contactUs {
+  background: linear-gradient(to right, #18a5dd, #d846c4, #30639c);
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  padding-left: 100px;
+  width: 100%;
+  text-align: justify;
+  align-items: center;
+}
+
+.aboutPage-contactUs-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutPage-contactUs-container-left-text {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 2vmax;
+  width: 70%;
+}
+
+.aboutPage-contactUs-container-left-text-content {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.aboutPage-contactUs-container-left-socials {
+  display: flex;
+  height: 50%;
+  width: 60%;
+  justify-content: center;
+}
+
+.aboutPage-contactUs-container-right {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2vmax;
+  padding-bottom: 3vmax;
+  height: 100%;
+  width: 70%;
+}
+
+.aboutPage-contactUs-input,
+.aboutPage-contactUs-textArea {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.aboutPage-contactUs-input > input {
+  padding: 1vmax 1vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 20px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+  margin-top: 10px;
+  background-color: var(--bg-color2);
+  color: var(--para-color);
+}
+
+.aboutPage-contactUs-textArea > textarea {
+  padding: 1vmax 1vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 20px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+  margin-top: 10px;
+  background-color: var(--bg-color2);
+  color: var(--para-color);
+}
+
+.contactForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.aboutPage-contactUs-exploreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #c53a94, #0965c0);
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.aboutPage-contactUs-exploreButton > span {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutPage-contactUs-exploreButton:hover {
+  background: linear-gradient(to right, #0965c0, #c53a94);
+  padding: 1px;
+}

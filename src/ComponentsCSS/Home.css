@@ -1,0 +1,76 @@
+.home {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller screens */
+  align-items: center;
+  padding: 40px 0;
+  background: linear-gradient(to right, #646cb8, #c6c5c7); /* Gradient with blue to white */
+}
+
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row; /* Arrange content side-by-side on larger screens */
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem; /* Adjust heading size as needed */
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #c53a94, #0965c0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.content a:hover {
+  background: linear-gradient(to right, #0965c0, #c53a94);
+  transform: scale(1.05);
+}
+
+.image-wrapper {
+  flex: 1;
+  text-align: center;
+  margin-top: 40px; /* Adjust margin for better layout on both large & small screens */
+}
+
+@media (min-width: 768px) {
+  .image-wrapper {
+    margin-top: 0; /* Reset margin for side-by-side layout */
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%; /* Ensure image scales responsively */
+  border-radius: 20px; /* Optional rounded corners */
+}

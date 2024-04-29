@@ -1,0 +1,72 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Adjust padding as needed */
+  background-color: #e9e9e9;
+  color: #030000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and nav on smaller screens */
+    align-items: center; /* Center content vertically */
+  }
+
+  .nav {
+    display: flex; /* Keep nav items in a row on smaller screens */
+    flex-direction: column; /* Stack nav items vertically on smaller screens */
+    padding: 0; /* Remove default padding */
+    margin-top: 15px; /* Add margin for spacing */
+  }
+
+  .nav ul li {
+    margin-right: 0; /* Remove horizontal margin on smaller screens */
+    margin-bottom: 10px; /* Add vertical margin for spacing */
+  }
+
+  .nav ul li a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333; /* Adjust text color */
+  font-size: 18px; /* Adjust font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav ul li a:hover {
+  transform: scale(1.5);
+  padding: 10px;
+  color: #fff;
+  border-radius: 15px;
+  background: linear-gradient(to right, #4752b8, #b83bc4);
+}

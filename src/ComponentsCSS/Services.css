@@ -1,0 +1,63 @@
+.services {
+    padding: 80px 0;
+    background: linear-gradient(to right, #18a5dd, #d846c4, #30639c); /* Gradient with blue to white */
+  }
+  
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container h2{
+    margin: 0 auto;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .service-card {
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .service-card i {
+    font-size: 32px;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  /* New style for the title */
+.services-title {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Add some space below the title */
+  align-items: center;
+}
+
+.services-title:hover {
+  color: #ffffff; /* Change hover color as desired */
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+.service-card p {
+    line-height: 1.5;
+  }
+  
